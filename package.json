@@ -1,0 +1,22 @@
+{
+  "name": "node-template",
+  "version": "0.0.1",
+  "description": "A simple node template",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir lib && npm run hint",
+    "hint": "./node_modules/.bin/jshint src/* && ./node_modules/.bin/jshint test/*",
+    "test": "npm run build && ./node_modules/.bin/mocha"
+  },
+  "dependencies": {
+    "ramda": "0.17.1",
+    "babel": "5.8.21"
+  },
+  "devDependencies": {
+    "mocha": "2.2.5",
+    "jshint": "~2.8.0"
+  },
+  "author": {
+      "name": "Stephen Scott",
+      "email": "scottie1984@gmail.com"
+  }
+}
